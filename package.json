@@ -1,6 +1,6 @@
 {
   "name": "@ctco-dev/html-webpack-inject-env-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add the ability to inject environment variables into browser's global space under window.env to get reaching them at run time",
   "main": "index.js",
   "files": [
