@@ -40,7 +40,7 @@ Object.defineProperty(window, '${name}', {
 const injection = ({ mask, name }) => env =>
   [clean(mask), injectionFrom(name)].reduce((value, fn) => fn(value), env);
 
-class InjectEnvHtmlWebpackPlugin {
+class HtmlWebpackInjectEnvPlugin {
   constructor(options = {}) {
     this.options = { ...defaultOptions, ...options };
   }
@@ -63,4 +63,4 @@ class InjectEnvHtmlWebpackPlugin {
   }
 }
 
-module.exports = InjectEnvHtmlWebpackPlugin;
+module.exports = HtmlWebpackInjectEnvPlugin;
